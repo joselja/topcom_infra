@@ -60,7 +60,7 @@ PR pipeline stages:
 ---
 
 
-## 1. Recommended Tools
+## 2. Recommended Tools
 
 ### CI/CD Orchestration
 - **GitHub Actions**
@@ -99,9 +99,9 @@ PR pipeline stages:
 ---
 
 
-## 2. CI/CD Lifecycle (End-to-End)
+## 3. CI/CD Lifecycle (End-to-End)
 
-### 1) Pull Request – Continuous Integration (CI)
+### 1. Pull Request – Continuous Integration (CI)
 Triggered on `pull_request` for changes under `terraform/**`.
 
 **Purpose:** fast feedback, prevent bad infrastructure from reaching `main`.
@@ -120,7 +120,7 @@ Outcome:
 
 ---
 
-### 2) Merge to `main` – Continuous Deployment to Staging
+### 2. Merge to `main` – Continuous Deployment to Staging
 Triggered on push to `main`.
 
 **Purpose:** automatically deploy validated changes to staging.
@@ -137,7 +137,7 @@ Outcome:
 
 ---
 
-### 3) Promotion to Production – Controlled Release
+### 3. Promotion to Production – Controlled Release
 Triggered after successful staging deployment.
 
 **Purpose:** safe and auditable production changes.
@@ -154,7 +154,7 @@ Outcome:
 
 ---
 
-## 3. Code Quality in the Pipeline
+## 4. Code Quality in the Pipeline
 
 Code quality is enforced early to reduce risk and rework.
 
@@ -174,7 +174,7 @@ These checks run on every pull request and block merges on failure.
 
 ---
 
-## 4. Security in the Pipeline
+## 5. Security in the Pipeline
 
 Security is integrated using a **shift-left** approach.
 
@@ -198,7 +198,7 @@ Security is integrated using a **shift-left** approach.
 
 ---
 
-## 5. Key Benefits of This Design
+## 6. Key Benefits of This Design
 
 - Clear separation of **CI (validation)** and **CD (deployment)**
 - Strong quality and security gates before infrastructure changes
