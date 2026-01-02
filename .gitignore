@@ -39,3 +39,4 @@ terraform.rc
 
 # Allow environment tfvars (non-sensitive)
 !terraform/env/*.tfvars
+.DS_Store
