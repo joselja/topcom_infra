@@ -204,5 +204,3 @@ Security is integrated using a **shift-left** approach.
 - Strong quality and security gates before infrastructure changes
 - Immutable promotion from PR → staging → production
 - Auditable, repeatable, and low-risk Terraform deployments
-
-The pipeline follows Terraform and cloud-native best practices while remaining simple, maintainable, and scalable.
